@@ -68,9 +68,8 @@ apt-get install -y apache2 php5 libusb-1.0-0 libusb-1.0-0-dbg libusb-1.0-0-dev l
 #INSTALL BladeRF
 echo -e "\e[1;32mINSTALL BladeRF\e[0m"
 cd /tmp
-wget -c https://github.com/Nuand/bladeRF/archive/master.zip
-unzip master.zip
-cd bladeRF-master
+git clone https://github.com/Nuand/bladeRF.git
+cd bladeRF
 cd host
 mkdir build
 cd build
